@@ -1,5 +1,17 @@
+:root {
+  --headerHeight: 50px;
+  --footerHeight: 50px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+main {
+  min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+
+  text-align: center;
+  padding-top: 50px;
 }
